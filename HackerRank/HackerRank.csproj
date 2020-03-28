@@ -41,7 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Easy\CompareTheTriplets.cs" />
     <Compile Include="Easy\GradingStudents.cs" />
+    <Compile Include="Helpers\ArrayHelper.cs" />
     <Compile Include="Medium\ClimbingTheLeaderBoard.cs" />
     <Compile Include="Medium\MagicSquare.cs" />
     <Compile Include="Easy\PickingNumbers.cs" />

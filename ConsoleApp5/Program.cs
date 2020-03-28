@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using HackerRank.Easy;
 using HackerRank.Medium;
+using HackerRank.Helpers;
 
 namespace ConsoleApp5
 {
@@ -62,11 +63,18 @@ namespace ConsoleApp5
 
             #region Grading Students
             GradingStudents gs = new GradingStudents("73 67 38 33");
-            int[] g = gs.Solve();
-            foreach ( int s in g)
-            {
-                Console.WriteLine(s+ " ");
-            }
+            //int[] g = gs.Solve();
+            //foreach ( int s in g)
+            //{
+            //    Console.WriteLine(s+ " ");
+            //}
+            #endregion
+
+            #region Compare the Triplets
+            CompareTheTriplets ctt = new CompareTheTriplets("5 6 7", "3 6 10");
+
+            int[] arr = ctt.Solve();
+            ArrayHelper.Show(arr);
             #endregion
 
             Console.ReadLine();

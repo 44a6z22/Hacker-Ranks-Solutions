@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using HackerRank.Helpers;
 
 /**
  * The Problem : https://www.hackerrank.com/challenges/grading/submissions/code/143710903
@@ -16,8 +17,7 @@ namespace HackerRank.Easy
 
         public GradingStudents(string grades)
         {
-            string[] strings = grades.Split(' ');
-            this.Grades = Array.ConvertAll(strings, int.Parse).ToArray();
+            this.Grades = ArrayHelper.ConvertToInt(grades);
         }
 
         private int RoundedGrade(int grade)
