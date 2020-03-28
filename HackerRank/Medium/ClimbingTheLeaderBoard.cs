@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 
 /**
- *  The Problem  : https://www.hackerrank.com/challenges/picking-numbers/problem
+ *  The Problem  : https://www.hackerrank.com/challenges/climbing-the-leaderboard/problem?isFullScreen=false
  */
 
-namespace HackerRank
+namespace HackerRank.Medium
 {
     public class ClimbingTheLeaderBoard
     {
@@ -28,6 +28,7 @@ namespace HackerRank
             this.Scores = this.ToInt(scores).ToArray();        
         }
 
+        // works But times out one the 6, 7, 8, 9 th tests.
         public int[] Solve()
         {
             List<int> ranks = new List<int>();
@@ -60,60 +61,6 @@ namespace HackerRank
             }
 
             return ranks.ToArray();
-        }
-
-        public int[] Optimized()
-        {
-            int[] ranks = new int[this.Scores.Length];
-
-            int[] rs = new int[this.Alice.Length];
-
-            List<int> newAlice = this.Alice.ToList();
-            List<int> newScores = this.Scores.ToList();
-
-            int a = newScores.BinarySearch(100);
-            ranks[0] = 1;
-            for (int i = 1; i < newScores.Count ; i++)
-            {
-                if (newScores[i] == newScores[i-1])
-                {
-                    ranks[i] = ranks[i-1];
-                }
-                else
-                {
-                    ranks[i] = ranks[i - 1] + 1;
-                }
-            }
-
-            for (int i = 0; i< newAlice.Count; i++)
-            {
-                if ( newAlice[i] > newScores[0] )
-                {
-                    rs[i] = 1;
-                }
-                else if (newAlice[i] < newScores[newScores.Count - 1])
-                {
-                    int index = newScores.Count - 1;
-                    rs[i] = ranks[index] +1;
-                }
-                else
-                {
-                    int index = getClosest(newScores.ToArray(), newAlice[i]);
-                    rs[i] = ranks[index];
-                }
-            }
-
-            return rs.ToArray();
-        }
-       
-        private int getClosest(int[] ok , int number )
-        {
-            int nearest = Array.IndexOf(
-                            ok,
-                            ok.ToList().OrderBy(x => Math.Abs((long)x - number)).First()
-                            );
-
-            return nearest;
         }
 
         private int[] ToInt(string value)

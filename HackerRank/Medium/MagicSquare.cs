@@ -5,11 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 /**
- *  The Problem  : https://www.hackerrank.com/challenges/picking-numbers/problem
+ *  The Problem  : https://www.hackerrank.com/challenges/magic-square-forming/problem
  */
 
 
-namespace HackerRank
+namespace HackerRank.Medium
 {
     public class MagicSquare
     {

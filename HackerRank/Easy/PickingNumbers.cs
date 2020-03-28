@@ -11,7 +11,6 @@ using System.Threading.Tasks;
 
 namespace HackerRank
 {
-
     public class PickingNumbers
     {
         private List<int> Array { get; set; }
