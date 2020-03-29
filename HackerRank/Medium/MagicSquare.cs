@@ -33,7 +33,7 @@ namespace HackerRank.Medium
                 new int [][] {new int [] {2, 7, 6}, new int [] {9, 5, 1}, new int [] {4, 3, 8}},
             };
         }
-        
+        // working on a General Solution.
         #region  Main
         public void Generate()
         {
@@ -126,6 +126,7 @@ namespace HackerRank.Medium
         }
         #endregion
 
+        // 3x3 Solution
         #region A 3x3 Magic Square Sollution...
         
         public int _3X3MAgicSquareMinMoves()

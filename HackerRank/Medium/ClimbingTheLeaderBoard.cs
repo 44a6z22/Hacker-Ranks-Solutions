@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using HackerRank.Helpers;
 
 /**
  *  The Problem  : https://www.hackerrank.com/challenges/climbing-the-leaderboard/problem?isFullScreen=false
@@ -24,11 +25,11 @@ namespace HackerRank.Medium
         
         public ClimbingTheLeaderBoard(string scores, string alice)
         {
-            this.Alice = this.ToInt(alice).ToArray();
-            this.Scores = this.ToInt(scores).ToArray();        
+            this.Alice = ArrayHelper.ConvertToInt(alice);
+            this.Scores = ArrayHelper.ConvertToInt(scores);
         }
 
-        // works But times out one the 6, 7, 8, 9 th tests.
+        // works But timesOut on the 6th, 7th, 8th and the 9th test.
         public int[] Solve()
         {
             List<int> ranks = new List<int>();
@@ -62,14 +63,6 @@ namespace HackerRank.Medium
 
             return ranks.ToArray();
         }
-
-        private int[] ToInt(string value)
-        {
-            return Array.ConvertAll(
-                    value.Split(' '),
-                    int.Parse
-                );
-        }
-
+        
     }
 }

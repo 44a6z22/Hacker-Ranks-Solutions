@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Numerics;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -62,21 +63,27 @@ namespace ConsoleApp5
             #endregion
 
             #region Grading Students
-            GradingStudents gs = new GradingStudents("73 67 38 33");
-            //int[] g = gs.Solve();
-            //foreach ( int s in g)
-            //{
-            //    Console.WriteLine(s+ " ");
-            //}
+            //GradingStudents gs = new GradingStudents("73 67 38 33");
+
             #endregion
 
             #region Compare the Triplets
-            CompareTheTriplets ctt = new CompareTheTriplets("5 6 7", "3 6 10");
+            //CompareTheTriplets ctt = new CompareTheTriplets("5 6 7", "3 6 10");
 
-            int[] arr = ctt.Solve();
-            ArrayHelper.Show(arr);
+            //int[] arr = ctt.Solve();
+            //ArrayHelper.Show(arr);
             #endregion
-
+            HourGlass h = new HourGlass();
+            int n = h.GetIt();
+            //foreach (int[] a in n )
+            //{
+            //    foreach (int i in a )
+            //    {
+            //        Console.Write(i + " " );
+            //    }
+            //    Console.WriteLine();
+            //}
+            Console.Write(n);
             Console.ReadLine();
         }
     }

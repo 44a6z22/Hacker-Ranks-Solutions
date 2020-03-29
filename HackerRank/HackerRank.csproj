@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Easy\CompareTheTriplets.cs" />
     <Compile Include="Easy\GradingStudents.cs" />
+    <Compile Include="Easy\HourGlass.cs" />
     <Compile Include="Helpers\ArrayHelper.cs" />
     <Compile Include="Medium\ClimbingTheLeaderBoard.cs" />
     <Compile Include="Medium\MagicSquare.cs" />

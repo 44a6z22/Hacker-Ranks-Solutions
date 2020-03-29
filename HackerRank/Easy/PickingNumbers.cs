@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using HackerRank.Helpers;
 
 
 /**
@@ -15,10 +16,9 @@ namespace HackerRank
     {
         private List<int> Array { get; set; }
         
-        public PickingNumbers(string array)
+        public PickingNumbers(string s)
         {
-            string[] strings = array.Split(' ');
-            this.Array =  System.Array.ConvertAll(strings, int.Parse).ToList();
+            this.Array = ArrayHelper.ConvertToInt(s).ToList();
         }
         
         public int generate()
