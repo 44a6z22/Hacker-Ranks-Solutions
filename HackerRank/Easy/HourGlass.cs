@@ -27,6 +27,7 @@ namespace HackerRank.Easy
             new int[] {0,0,1,2,4,0}
             };
         }
+
         public int GetIt()
         {
             List<int> number = new List<int>();            

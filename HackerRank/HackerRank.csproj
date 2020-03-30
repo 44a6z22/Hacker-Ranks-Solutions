@@ -44,14 +44,15 @@
     <Compile Include="Easy\CompareTheTriplets.cs" />
     <Compile Include="Easy\GradingStudents.cs" />
     <Compile Include="Easy\HourGlass.cs" />
+    <Compile Include="Easy\LeftRotations.cs" />
+    <Compile Include="Hard\ArrayManipulation.cs" />
     <Compile Include="Helpers\ArrayHelper.cs" />
     <Compile Include="Medium\ClimbingTheLeaderBoard.cs" />
     <Compile Include="Medium\MagicSquare.cs" />
     <Compile Include="Easy\PickingNumbers.cs" />
+    <Compile Include="Medium\SparseArrays.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Hard\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -6,7 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using HackerRank.Easy;
 using HackerRank.Medium;
+using HackerRank.Hard;
 using HackerRank.Helpers;
+
 
 namespace ConsoleApp5
 {
@@ -73,17 +75,22 @@ namespace ConsoleApp5
             //int[] arr = ctt.Solve();
             //ArrayHelper.Show(arr);
             #endregion
-            HourGlass h = new HourGlass();
-            int n = h.GetIt();
-            //foreach (int[] a in n )
+
+            #region Sparse Arrays
+            //SparseArrays sa = new SparseArrays("def de fgh", "de lmn fgh");
+            //foreach (int i in sa.Solve())
             //{
-            //    foreach (int i in a )
-            //    {
-            //        Console.Write(i + " " );
-            //    }
-            //    Console.WriteLine();
+            //    Console.Write(i);
+
             //}
-            Console.Write(n);
+            #endregion
+
+            #region 
+
+            ArrayManipulation am = new ArrayManipulation(10, "2 6 8,3 5 7,1 8 1,5 9 15");
+
+            Console.WriteLine(am.Solve());
+            #endregion
             Console.ReadLine();
         }
     }
