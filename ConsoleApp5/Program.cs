@@ -85,12 +85,14 @@ namespace ConsoleApp5
             //}
             #endregion
 
-            #region 
+            #region The Array Manipulation Problem.
 
             ArrayManipulation am = new ArrayManipulation(10, "2 6 8,3 5 7,1 8 1,5 9 15");
 
             Console.WriteLine(am.Solve());
+           
             #endregion
+
             Console.ReadLine();
         }
     }

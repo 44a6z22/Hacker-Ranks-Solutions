@@ -30,16 +30,16 @@ namespace HackerRank.Hard
 
         public long Solve()
         {
-            List<int> maxes = new List<int>();
+            //List<int> maxes = new List<int>();
             foreach (string [] str in this.L)
             {
                 for (int i = int.Parse(str[0]) -1  ; i < int.Parse(str[1]) ; i++ ){
                     this.Array[i] += int.Parse(str[2]);        
                 }
-                maxes.Add(this.Array.Max());
+                //maxes.Add(this.Array.Max());
             }
 
-            return (long) maxes.Max();
+            return (long) this.Array.Max();
         }
     }
 }
